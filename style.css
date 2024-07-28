@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.lift{
+    display: flex;
+    background-color: rgba(59, 59, 59, 0.507);
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid black;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 10px 0 10px 0 black;
+    height: 90vh;
+}
+.lift img{
+    width: 250px;
+}
+#lift{
+    transition: padding-bottom 0.5s ease;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    border: none;
+    border-radius:100%;
+    border: none;
+    width: 50px;
+    padding: 15px 10px;
+}
+.floor,.floor,.floor,.floor,.floor{
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 10px 0 8px 0 black;
+}
+.floor:hover,.floor:hover,.floor:hover,.floor:hover,.floor:hover{
+    box-shadow: none;
+}
+
+.ground{
+    padding-bottom: 0;
+}
+.first{
+    padding-bottom: 180px;
+}
+.second{
+    padding-bottom: 310px;
+}
+.third{
+    padding-bottom: 400px;
+}
+.four{
+    padding-bottom: 450px;
+}
