@@ -25,7 +25,7 @@ body{
     width: 250px;
 }
 #lift{
-    transition: padding-bottom 0.5s ease;
+    transition: margin-bottom 0.5s ease;
 }
 .btn{
     display: flex;
@@ -50,17 +50,17 @@ body{
 }
 
 .ground{
-    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .first{
-    padding-bottom: 180px;
+    margin-bottom: 180px;
 }
 .second{
-    padding-bottom: 310px;
+    margin-bottom: 310px;
 }
 .third{
-    padding-bottom: 400px;
+    margin-bottom: 400px;
 }
 .four{
-    padding-bottom: 450px;
+    margin-bottom: 450px;
 }
