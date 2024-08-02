@@ -1,14 +1,24 @@
 const lift = document.querySelector("#lift");
 let floor = document.querySelectorAll(".floor");
+const liftDoors = document.querySelector('.lift-doors');
 const classes = ["ground", "first", "second", "third", "four"]
+let moving = false
 floor.forEach((key, index) => {
     key.addEventListener("click", () => {
+        if(!moving){
+            moving = true
         lift.src = "liftclose.jpg";
         lift.className = '';
         lift.classList.add(classes[index])
+            key.style.color = "red";
+            key.style.border = "2px solid red";
+        
         setTimeout(() => {
             lift.src = "liftopen.jpg"
-        }, 1000);
-
+            key.style.color = "white";
+            key.style.border = "";
+        }, 3000);
+        moving = false
+    }
     })
 })
