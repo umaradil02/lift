@@ -1,5 +1,6 @@
 const lift = document.querySelector("#lift");
 let floor = document.querySelectorAll(".floor");
+const text = document.querySelector(".text");
 const liftDoors = document.querySelector('.lift-doors');
 const classes = ["ground", "first", "second", "third", "four"]
 let moving = false
@@ -12,6 +13,8 @@ floor.forEach((key, index) => {
         lift.classList.add(classes[index])
             key.style.color = "red";
             key.style.border = "2px solid red";
+            text.textContent = index
+            
         
         setTimeout(() => {
             lift.src = "liftopen.jpg"
